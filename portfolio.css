@@ -17,30 +17,56 @@ body {
 /* ================= NAVBAR ================= */
 
 .navi {
-    background-color: #111827;
-    padding: 20px;
+    background: #111827;
+    padding: 15px 30px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #1f2937;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .new {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .new a {
     text-decoration: none;
-    color: #f8fafc;
-    font-size: 18px;
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 13px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
 .new a:hover {
     color: #38bdf8;
+    background: #1e293b;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #f8fafc;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 /* ================= HERO ================= */
@@ -48,7 +74,7 @@ body {
 .hero {
     background-color: #0f172a;
     min-height: 75vh;
-    padding: 90px 10%;
+    padding: 70px 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -607,5 +633,35 @@ body {
     .coding-card {
         width: 100%;
         max-width: 400px;
+    }
+}
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+    .new {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 15px;
+        padding: 10px;
+        background: #1e293b;
+        border-radius: 10px;
+    }
+
+    .new.show {
+        display: flex;
     }
 }
