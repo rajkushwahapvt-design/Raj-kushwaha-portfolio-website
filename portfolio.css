@@ -466,10 +466,18 @@ body {
 }
 
 /* ================= CODING ================= */
+/* ================= CODING ================= */
 
 .coding {
     background-color: #111827;
     padding: 80px 10%;
+}
+
+.coding h2 {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 35px;
+    margin-bottom: 45px;
 }
 
 .coding-container {
@@ -481,11 +489,18 @@ body {
 
 .coding-card {
     width: 350px;
+    min-height: 220px;
     padding: 30px;
     background-color: #0f172a;
     border: 1px solid #334155;
     border-radius: 10px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.coding-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
 }
 
 .coding-card h3 {
@@ -496,6 +511,7 @@ body {
 
 .coding-card p {
     color: #94a3b8;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -508,6 +524,8 @@ body {
     border: 2px solid #38bdf8;
     border-radius: 6px;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .coding-btn:hover {
