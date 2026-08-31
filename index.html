@@ -8,57 +8,61 @@
     <title>Raj Kushwaha - Portfolio !</title>
 
     <link rel="stylesheet" href="portfolio.css">
+</body>
 </head>
 
 <body>
 
-    <nav class="new">
+    <nav class="navi">
+        <div class="nav-header">
+            <a href="#Home" class="logo">Raj.</a>
 
-        <a href="#Home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#coding">Coding</a>
-        <a href="#contact">Contact</a>
+           <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
 
+        <div class="new" id="navMenu">
+            <a href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#coding">Coding</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
-
 
     <!-- HOME -->
 
     <section class="hero" id="Home">
 
-    <h3>Hi, I'm Raj Kushwaha</h3>
+        <h3>Hi, I'm Raj Kushwaha</h3>
 
-    <h4>B.Tech CS-AIML Student & Aspiring AI/ML Developer</h4>
+        <h4>B.Tech CS-AIML Student & Aspiring AI/ML Developer</h4>
 
-    <p>
-        I build practical software and AI-driven solutions while developing
-        strong foundations in DSA and web development.
-    </p>
+        <p>
+            I build practical software and AI-driven solutions while developing
+            strong foundations in DSA and web development.
+        </p>
 
-    <div class="hero-buttons">
+        <div class="hero-buttons">
 
-        <a href="#projects" class="btn">
-            View My Projects
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+            <a href="resume.pdf.pdf" class="btn-btn" target="_blank">
+                Download Resume
+            </a>
+
+        </div>
+
+        <a href="https://github.com/rajkushwahapvt-design" class="github-link" target="_blank">
+            GitHub
         </a>
 
-        <a href="resume.pdf" class="btn-btn" target="_blank">
-            Download Resume
-        </a>
-
-    </div>
-
-    <a href="https://github.com/rajkushwahapvt-design"
-       class="github-link"
-       target="_blank">
-        GitHub
-    </a>
-
-</section>
+    </section>
 
 
     <!-- ABOUT -->
@@ -195,8 +199,7 @@
                     HTML • CSS • JavaScript
                 </p>
 
-                <a href="https://rajkushwahapvt-design.github.io/Gym-management-system/"
-                    class="project-btn"
+                <a href="https://rajkushwahapvt-design.github.io/Gym-management-system/" class="project-btn"
                     target="_blank">
                     View Project
                 </a>
@@ -218,8 +221,7 @@
                     Python • AI • Machine Learning
                 </p>
 
-                <a href="https://rajkushwahapvt-design.github.io/AI-Study-Assistant/"
-                    class="project-btn"
+                <a href="https://rajkushwahapvt-design.github.io/AI-Study-Assistant/" class="project-btn"
                     target="_blank">
                     View Project
                 </a>
@@ -241,9 +243,7 @@
                     Python • Pandas • NumPy • Machine Learning
                 </p>
 
-                <a href="YOUR-GITHUB-LINK"
-                    class="project-btn"
-                    target="_blank">
+                <a href="YOUR-GITHUB-LINK" class="project-btn" target="_blank">
                     View Project
                 </a>
 
@@ -369,9 +369,7 @@
                     problems on GeeksforGeeks.
                 </p>
 
-                <a href="https://www.geeksforgeeks.org/profile/rajkushwaha2006"
-                    target="_blank"
-                    class="achievement-btn">
+                <a href="https://www.geeksforgeeks.org/profile/rajkushwaha2006" target="_blank" class="achievement-btn">
                     View GFG Profile
                 </a>
 
@@ -387,9 +385,7 @@
                     focusing on Data Structures and Algorithms.
                 </p>
 
-                <a href="https://leetcode.com/u/Rajkushwaha2006/"
-                    target="_blank"
-                    class="achievement-btn">
+                <a href="https://leetcode.com/u/Rajkushwaha2006/" target="_blank" class="achievement-btn">
                     View LeetCode Profile
                 </a>
 
@@ -441,13 +437,11 @@
                 Email
             </a>
 
-            <a href="https://www.linkedin.com/in/raj-kushwaha-1021a1329/"
-                target="_blank">
+            <a href="https://www.linkedin.com/in/raj-kushwaha-1021a1329/" target="_blank">
                 LinkedIn
             </a>
 
-            <a href="https://github.com/rajkushwahapvt-design"
-                target="_blank">
+            <a href="https://github.com/rajkushwahapvt-design" target="_blank">
                 GitHub
             </a>
 
@@ -456,22 +450,11 @@
 
         <form class="contact-form">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required
-            >
+            <input type="text" placeholder="Your Name" required>
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required
-            >
+            <input type="email" placeholder="Your Email" required>
 
-            <textarea
-                placeholder="Your Message"
-                rows="5"
-                required>
+            <textarea placeholder="Your Message" rows="5" required>
             </textarea>
 
             <button type="submit">
@@ -481,8 +464,7 @@
         </form>
 
     </section>
-
-
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
